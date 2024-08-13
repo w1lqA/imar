@@ -13,7 +13,7 @@ const app = express();
 
 // Configure CORS
 const corsOptions = {
-    origin: 'http://95.163.223.96',
+    origin: 'https://imar-group.com',
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
 };

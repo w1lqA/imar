@@ -12,6 +12,7 @@ const Footer = () => {
     const {t} = useTranslation()
     const info = {
         phone: '+7 (991) 773-48-28',
+        phone2: '+7 (985) 395-73-83',
         email: 'info@imar-group.com',
         copyright: `${new Date().getFullYear()} IMAR. ${t("footer.copyright")}`
     }
@@ -22,7 +23,7 @@ const Footer = () => {
                 <img src={logoNav}/>
             </Link>
             <ul className="flex flex-col xl:flex-row items-start justify-center mx-auto sm:mx-0 xl:space-x-12 font-normal text-sm text-alternative mt-6 sm:mt-0 ">
-                <li>{t("footer.phone")}: {info.phone}</li>
+                <li>{t("footer.phone")}: {info.phone} | {info.phone2}</li>
                 <li>{t("footer.email")}: {info.email}</li>
                 <li>&copy; {info.copyright}</li>
             </ul>
