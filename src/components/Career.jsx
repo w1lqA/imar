@@ -13,9 +13,11 @@ const Career = ({displayMode}) => {
     window.scrollTo(0, 0)
   }
   return (
-    <div className='max-w-screen-3xl mx-auto relative flex justify-center py-8 bg-center bg-cover' style={{backgroundImage: `url(${bgHero})`}} >
+    <div className='max-w-screen-3xl mx-auto relative flex justify-center py-8 bg-center bg-cover'>
         <div className='backdrop-blur-sm bg-black bg-opacity-50 absolute inset-0' aria-hidden="true"></div>
-        <div class="max-w-4xl mx-auto px-4 py-8 z-10">
+        <img src={bgHero} className='w-full h-full object-cover absolute -z-10 animate-pulse2 inset-0'/>
+        <div className='backdrop-blur-[2px] bg-opacity-50 absolute inset-0 z-10' aria-hidden="true"></div>
+        <div class="max-w-4xl mx-auto px-4 py-8 z-20">
           <div class="flex flex-col items-center space-y-8">
             <div className="w-[50px] h-[6px] bg-[#6484CD]"></div>
             {/* <img src={logoHeader} className='w-[300px] drop-shadow-lg'/> */}

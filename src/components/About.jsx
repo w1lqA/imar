@@ -32,16 +32,16 @@ const About = () => {
           ))}
         </div>
         <div className="2xl:col-span-5">
-          <div className='px-24 py-12 lg:py-24 bg-[#F7F7F7] grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-8 sm:gap-16'>
+          <div className='px-24 py-12 lg:py-24 bg-gradient-to-tr from-main2 to-main grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-8 sm:gap-16'>
             <div className='text-left'>
-              <h2 className="text-4xl font-rubik font-bold text-left mb-12 uppercase text-[#333333]">{aboutTitle}</h2>
+              <h2 className="text-4xl font-rubik font-bold text-left mb-12 uppercase text-white">{aboutTitle}</h2>
               <div className="w-[50px] h-[6px] bg-[#6484CD]"></div>
             </div>
             {paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-[#696666] font-normal text-sm leading-relaxed">{paragraph}</p>
+              <p key={index} className="text-alternative2 font-normal text-sm leading-relaxed">{paragraph}</p>
             ))}
           </div>
-          <div className='bg-[#2A2A2A] py-8 px-12 sm:px-24 flex justify-between items-center'>
+          <div className='bg-gradient-to-tr from-secondary to-secondary2 py-8 px-12 sm:px-24 flex justify-between items-center'>
             <h2 className="text-3xl font-bold font-rubik text-white">{consultationText}</h2>
             <a href='#contacts' className="flex bg-transparent hover:bg-[#6484CD] flex-row items-center border-[3px] group border-[#6484CD] text-xs sm:text-sm text-[#6484CD] hover:text-white px-3 py-2 font-bold text-center tracking-[4px] uppercase">
               <FaArrowRight className='-ml-3 opacity-0 group-hover:ml-3 group-hover:mr-3 group-hover:opacity-100 transition-all ease-in-out duration-300'/>

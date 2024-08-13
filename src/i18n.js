@@ -71,10 +71,10 @@ i18n
             consultation: 'Leave a request and we will contact you',
             contactFormButton: 'contact form',
             },
-            servicesSectionTitle: 'OUR DIVISIONS AND SERVICES PROVIDED',
+            servicesSectionTitle: 'FULL-SERVICE CONSTRUCTION COMPANY',
             services: [
                 {
-                    title: 'CONSTRUCTION ENGINEERING',
+                    title: 'ENGINEERING',
                     description: [
                         'Turnkey construction and installation works',
                         'Attracting a full staff of employees to the facility',
@@ -82,7 +82,7 @@ i18n
                     ],
                 },
                 {
-                    title: 'DESIGNING',
+                    title: 'CONSTRUCTION',
                     description: [
                         'Design of engineering system drawings',
                         'Delivery of the complete list of documentation to the customer',
@@ -90,7 +90,7 @@ i18n
                     ],
                 },
                 {
-                    title: 'EXPLOITATION',
+                    title: 'MANAGEMENT',
                     description: [
                         'Professional service',
                         'Efficient maintenance technology',
@@ -111,6 +111,8 @@ i18n
                 project6: "G-DRIVE ARENA",
                 project7: "Industrial Park",
                 project8: "«Magadan» Airport",
+                project9: "Min. vody airport",
+                project10: "Roshchino Airport",
                 description1: "Electrical and mechanical work",
                 description2: "Construction and installation works",
                 projectCardButton: "See more"
@@ -227,6 +229,24 @@ i18n
                     'The new terminal of Magadan International Airport will be equipped with 2 telescopic ladders and an automatic baggage handling system, it will realize modern technologies of passenger service.',
                   ],
                 },
+                {
+                  title: ['Mineralnye Vody Airport'],
+                  headerInfo: ['2024 - present', 'Electrical and mechanical works', 'LIMAKMARASH'],
+                  description: [
+                    "As a result of the construction, the area of the new domestic terminal will be 28,000 square meters. The new terminal of Mineralnye Vody International Airport will increase the capacity to 1,000 passengers per hour and the total annual volume to 3,800,000 passengers per year.",
+                    "In addition to the construction of the new terminal building 'turnkey', the general contractor will lay engineering and communication networks, as well as carry out landscaping of the forecourt area. The new domestic terminal will be equipped with five telescopic bridges, modern passenger service systems, and baggage handling systems.",
+                    "According to the contract with the general contractor, the work is expected to start in mid-April 2023 and be completed in January 2025."
+                  ]
+                },
+                {
+                  title: ['Roshchino Airport'],
+                  headerInfo: ['2024 - present', 'Electrical and mechanical works', 'LIMAKMARASH'],
+                  description: [
+                    "During the reconstruction, the area of the new terminal, combined with the existing one, will increase from 27,000 to 46,000 square meters.",
+                    "The reconstruction of Roshchino International Airport will increase the capacity to 1,900 passengers per hour, with a total annual volume of up to 3,800,000 passengers. In addition to the terminal building, the project includes the reconstruction of the engineering networks of buildings and structures, the forecourt area, and the apron.",
+                    "The new terminal will be equipped with seven telescopic bridges, modern passenger service systems, and baggage handling systems."
+                  ]
+                },                
               ]
             },
             servicePage: {
@@ -414,10 +434,10 @@ i18n
                 consultation: 'Оставьте заявку, и мы свяжемся с вами',
                 contactFormButton: 'оставить заявку',
             },
-            servicesSectionTitle: 'НАШИ ПОДРАЗДЕЛЕНИЯ И ПРЕДОСТАВЛЯЕМЫЕ УСЛУГИ',
+            servicesSectionTitle: 'СТРОИТЕЛЬНАЯ КОМПАНИЯ ПОЛНОГО ЦИКЛА',
             services: [
               {
-                title: 'Строительный инжиниринг',
+                title: 'Инжиниринг',
                 description: [
                   'Комплекс строительно-монтажных работ "под ключ"',
                   'Привлечение полного штата сотрудников на объект',
@@ -425,7 +445,7 @@ i18n
                 ],
               },
               {
-                title: 'ПРОЕКТИРОВАНИЕ',
+                title: 'Строительство',
                 description: [
                   'Проектирование чертежей инженерных систем',
                   'Поставка полного списка документации заказчику',
@@ -433,7 +453,7 @@ i18n
                 ],
               },
               {
-                title: 'ЭКСПЛУАТАЦИЯ',
+                title: 'Менеджмент',
                 description: [
                   'Профессиональное обслуживание',
                   'Эффективные технологии обслуживания',
@@ -454,6 +474,8 @@ i18n
               project6: "АРЕНА G-DRIVE",
               project7: "Индустриальный парк",
               project8: "Аэропорт «Магадан»",
+              project9: "Аэропорт Мин. воды",
+              project10: "Аэропорт Рощино",
               description1: "Электромонтажные и механические работы",
               description2: "Строительно-монтажные работы",
               projectCardButton: "Подробнее"
@@ -566,6 +588,24 @@ i18n
                     'В рамках реализации проекта ведётся строительство нового аэровокзального комплекса внутренних воздушных авиалиний Международного аэропорта Магадан.',
                     'Строительство новой привокзальной площади, новой распределительной электрической подстанции 10кВ, очистных сооружений и других вспомогательных объектов.',
                     'Новый терминал Международного аэропорта Магадан будет оснащен 2 телескопическими трапами и автоматической системой обработки багажа, в нем будут реализованы современные технологии обслуживания пассажиров.',
+                  ],
+                },
+                {
+                  title: ['Аэропорт', 'Минеральные воды'],
+                  headerInfo: ['2024 - настоящее время','Электрические и механические работы','LIMAKMARASH'],
+                  description: [
+                    "В результате строительства площадь нового терминала внутренних воздушных линий составит 28 тыс. м2. Новый терминал международного аэропорта Минеральные Воды позволит увеличить пропускную способность до 1 000 пасс./час., а общий годовой объем до 3 800 000 пасс./год.",
+                    'Помимо строительства нового здания аэровокзала «под ключ», генподрядчиком будут проложены инженерные и коммуникационные сети, а также выполнены работы по благоустройству привокзальной площади. Новый терминал внутренних воздушных линий будет оснащен пятью телескопическими трапами, современными системами обслуживания пассажиров и обработки багажа.',
+                    'По договору с генеральной подрядной организацией работы предполагается начать в середине апреля 2023 года и завершить в январе 2025 года.',
+                  ],
+                },
+                {
+                  title: ['Аэропорт Рощино'],
+                  headerInfo: ['2024 - настоящее время','Электрические и механические работы','LIMAKMARASH'],
+                  description: [
+                    'В ходе реконструкции площадь нового терминала с существующей - 27 тыс. м2, увеличится до 46 тыс. м2.',
+                    'Реконструкция международного аэропорта Рощино позволит увеличить пропускную способность до 1 900 пасс./час., а общий годовой объем до 3 800 000 пасс./год. Помимо здания аэровокзала в рамках строительства будет произведена реконструкция инженерных сетей зданий и сооружений, привокзальная площадь и перрон.',
+                    'Новый терминал будет оснащен семью телескопическими трапами, современными системами обслуживания пассажиров и обработки багажа.',
                   ],
                 },
               ]

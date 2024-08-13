@@ -17,12 +17,14 @@ const App = () => {
   useEffect(()=>{
     window.scrollTo(0, 0);
   },[])
+  useEffect(() => {
+    document.title = 'IMAR GROUP';
+  }, []);
 
-
-  const projectPages = [1,2,3,4,5,6,7,8]
+  const projectPages = [1,2,3,4,5,6,7,8,9,10]
   const servicePages = [1,2,3]
   return (
-    <div className='max-w-screen-3xl mx-auto'>
+    <div className='max-w-screen-3xl mx-auto overflow-x-hidden'>
       <Router>
         <Navbar />
         <Routes>

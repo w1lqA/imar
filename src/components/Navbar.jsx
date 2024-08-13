@@ -18,12 +18,12 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="bg-white text-white py-4">
+        <nav className="bg-gradient-to-tr from-main2 to-main text-white py-4">
             <div className="container max-w-screen-xl mx-auto flex lg:flex-nowrap relative flex-wrap justify-between items-center px-12 xl:px-6 sm:px-24">
                 <Link onClick={scrollToTop} to='/' className='w-32 h-10 flex my-auto'>
                     <img src={logoNav} alt="Logo" />
                 </Link>
-                <ul className={`text-[#666666] lg:items-center items-end font-semibold text-sm ${isOpen ? "flex w-full order-3" : "hidden lg:flex"} lg:flex lg:w-auto lg:flex-row flex-col lg:space-x-12 space-y-4 lg:space-y-0 lg:py-0 py-6`}>
+                <ul className={`text-white lg:items-center items-end font-semibold text-sm ${isOpen ? "flex w-full order-3" : "hidden lg:flex"} lg:flex lg:w-auto lg:flex-row flex-col lg:space-x-12 space-y-4 lg:space-y-0 lg:py-0 py-6`}>
                     <li><Link onClick={scrollToTop} to='/'>{t('navbar.main')}</Link></li>
                     <li><Link onClick={scrollToTop} to='/projects'>{t('navbar.projects')}</Link></li>
                     <li><Link onClick={scrollToTop} to='/services'>{t('navbar.services')}</Link></li>
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <div className="lg:hidden block">
                     <button 
                         onClick={handleToggle} 
-                        className="text-[#666666] focus:outline-none">
+                        className="text-white focus:outline-none">
                         <svg 
                             className="w-6 h-6" 
                             fill="none" 

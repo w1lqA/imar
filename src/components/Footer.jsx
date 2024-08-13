@@ -16,12 +16,12 @@ const Footer = () => {
         copyright: `${new Date().getFullYear()} IMAR. ${t("footer.copyright")}`
     }
     return (
-      <footer className="bg-[#2A2A2A] text-white py-8 max-w-screen-3xl mx-auto xl:px-0 px-24">
+      <footer className="bg-gradient-to-tr from-secondary2 to-secondary text-white py-8 max-w-screen-3xl mx-auto xl:px-0 px-24">
         <div className="container mx-auto text-center flex-wrap sm:flex-nowrap flex  flex-row items-center justify-between max-w-screen-xl">
             <Link onClick={scrollToTop} to={'/'} className='w-32 h-10 flex my-auto mx-auto sm:mx-0'>
                 <img src={logoNav}/>
             </Link>
-            <ul className="flex flex-col xl:flex-row items-start justify-center mx-auto sm:mx-0 xl:space-x-12 font-normal text-sm text-[#6B6B6B] mt-6 sm:mt-0 ">
+            <ul className="flex flex-col xl:flex-row items-start justify-center mx-auto sm:mx-0 xl:space-x-12 font-normal text-sm text-alternative mt-6 sm:mt-0 ">
                 <li>{t("footer.phone")}: {info.phone}</li>
                 <li>{t("footer.email")}: {info.email}</li>
                 <li>&copy; {info.copyright}</li>

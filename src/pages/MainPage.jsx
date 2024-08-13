@@ -17,11 +17,12 @@ const MainPage = () => {
   return (
     <div>
       <Header displayMode={'flex'}/>
-      <Activities/>
-      <About/>
+
       <Services/>
       <Hero/>
       <Projects/>
+      <Activities/>
+      <About/>
       <Geography/>
       <Career displayMode={'flex'}/>
       <Contacts title={t("contacts.title1")} emailType={'IMAR CONTACT'}/>
