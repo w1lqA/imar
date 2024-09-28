@@ -127,7 +127,7 @@ i18n
             contacts: {
                 title1: 'contact us',
                 title2: 'career in imar',
-                location: '109004, Moscow, Zemlyanoy Val str., 64, p. 2, room 1/7',
+                location: ['109147, Moscow, Tagansky Municipal District, 20,', 'bldg. 8, Marksistskaya St., premise 1/1'],
                 phone: '+7 (991) 773-48-28',
                 email: 'info@imar-group.com',
             },
@@ -490,7 +490,7 @@ i18n
             contacts: {
               title1: 'Свяжитесь с нами',
               title2: 'Карьера в IMAR',
-              location: '109004, Москва, ул. Земляной Вал, д. 64, стр. 2, ком. 1/7',
+              location: ['109147, г. Москва, вн.тер.г. Муниципальный Округ' ,'Таганский, ул Марксистская, д. 20, стр. 8, помещ. 1/1'],
               phone: '+7 (991) 773-48-28',
               email: 'info@imar-group.com',
             },

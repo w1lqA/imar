@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "homepage": ".",
-  "proxy": "http://localhost:5000",
+
   "dependencies": {
     "@pbe/react-yandex-maps": "^1.2.5",
     "@react-email/render": "^0.0.14",

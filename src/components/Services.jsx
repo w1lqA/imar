@@ -13,7 +13,7 @@ const Services = ({pageID}) => {
 
     return (
         <div className="max-w-screen-3xl container shadow-lg bg-gradient-to-tl from-main2 to-main mx-auto flex flex-col items-center py-16">
-            <h2 className="text-4xl font-rubik font-bold text-center mb-8 uppercase text-white">{servicesSectionTitle}</h2>
+            <h1 className="text-4xl font-rubik font-bold text-center mb-8 uppercase text-white">{servicesSectionTitle}</h1>
             <div className="w-[50px] h-[6px] bg-[#6484CD] mb-6"></div>
             <div className="flex flex-row items-start justify-center flex-wrap">
                 {services.map((service, index) => (
