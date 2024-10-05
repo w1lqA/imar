@@ -11,8 +11,8 @@ const Contacts = ({title, emailType}) => {
 
     const info = {
         location: t('contacts.location'),
-        phone: t('contacts.phone'),
-        phone2: '+7 (985) 395-73-83',
+        phone: '+7 995 845 10 19',
+        phone2: '+7 995 845 50 10',
         email: t('contacts.email'),
     };
   return (

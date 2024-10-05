@@ -86,10 +86,10 @@ const ProjectPage = ({page}) => {
                     <p class="text-left text-base text-white">
                         <b>{t('projectPage.header.title.0')}</b> {projectPage.projectInfo[pageID].headerInfo[0]}
                     </p>
-                    <p class="text-left text-base text-white">
+                    {/* <p class="text-left text-base text-white">
                         <b>{t('projectPage.header.title.1')}</b> {projectPage.projectInfo[pageID].headerInfo[1]}
                     </p>
-                    {/* <p class="text-left text-base text-white">
+                    <p class="text-left text-base text-white">
                         <b>{t('projectPage.header.title.2')}</b> {projectPage.projectInfo[pageID].headerInfo[2]}
                     </p> */}
                 </ul>

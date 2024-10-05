@@ -11,8 +11,8 @@ const Footer = () => {
       
     const {t} = useTranslation()
     const info = {
-        phone: '+7 (991) 773-48-28',
-        phone2: '+7 (985) 395-73-83',
+        phone: '+7 995 845 10 19',
+        phone2: '+7 995 845 50 10',
         email: 'info@imar-group.com',
         copyright: `${new Date().getFullYear()} IMAR. ${t("footer.copyright")}`
     }
