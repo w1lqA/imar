@@ -22,7 +22,7 @@ import Image17 from '../assets/images/projectImages/p17_1.jpg'
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-    const { t } = useTranslation();
+const { t } = useTranslation();
 
     const projectCards = [
         {

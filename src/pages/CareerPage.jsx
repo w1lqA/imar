@@ -9,6 +9,7 @@ const CareerPage = () => {
   const {t} = useTranslation()
   return (
     <div>
+      
         <Career displayMode={'hidden'}/>
         <Contacts title={t("contacts.title2")} emailType={'IMAR CAREER'}/>
         <Footer/>

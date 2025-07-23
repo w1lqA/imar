@@ -16,10 +16,10 @@ export const ContactsWidget = () => {
     const [isWidgetOpen, setIsWidgetOpen] = useState(true);
 
     return (
-        <div className={`${isWidgetOpen ? 'flex' : 'hidden'} fixed flex-col bottom-4 gap-4 right-4 z-[100] bg-mainblue/80 backdrop-blur-lg shadow-lg shadow-white/10 py-6 px-8 text-white border-white/20 border`}>
-            <button className='absolute top-2 right-2' onClick={() => setIsWidgetOpen(false)}>
+        <div className={`${isWidgetOpen ? 'flex' : 'hidden'} fixed flex-col bottom-4 gap-4 right-4 z-[100] bg-mainblue/20 backdrop-blur-sm shadow-lg shadow-white/5 py-6 px-8 text-white border-white/20 border`}>
+            {/* <button className='absolute top-2 right-2' onClick={() => setIsWidgetOpen(false)}>
             <CgClose/>
-            </button>
+            </button> */}
             <h3 className='text-start text-md font-medium uppercase'>Связаться с нами</h3>
             <div className='flex flex-row items-center justify-center gap-4 font-rubik text-sm font-medium'>
             <a href="https://wa.me/79958455010" className='text-left gap-3 flex flex-row items-center text-alternative'> 
