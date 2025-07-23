@@ -11,130 +11,161 @@ i18n
     lng: 'ru',
     returnObjects: true,
     resources: {
-      en: {
+    en: {
         translation: {
-          headerButton: 'About Us',
-          navbar: {
-            main: 'Home',
-            projects: 'Projects',
-            services: 'Services',
-            career: 'Career'
-          },
-          activitiesSectionTitle: 'Fields of Activity',
-          activities: [
-            'Civil Construction',
-            'Industrial Construction',
-            'Mining Construction',
-            'Oil and Gas Construction'
-          ],
-          about: {
+            navbar: {
+              main: 'Main', 
+              projects: 'Projects',
+              services: 'Services',
+              career: 'Career'
+            },
+            headerButton: 'about us',
+            activitiesSectionTitle: 'Areas of Our Activity',
+            activities: [
+            {
+                title: 'Civil Engineering',
+                description: 'Shaping the landscape with visionary architecture and robust civil engineering.',
+            },
+            {
+                title: 'Construction of infrastructure facilities',
+                description: 'Building essential connections through transportation, utilities, and urban development projects.',
+            },
+            {
+                title: 'Construction of power engineering and alternative energy facilities',
+                description: 'Empowering communities with sustainable electricity and renewable energy initiatives.',
+            },
+            {
+                title: 'Industrial construction',
+                description: 'Expertly navigating the world of energy extraction, processing, and distribution.',
+            },
+            {
+                title: 'Construction of marine  structures',
+                description: 'Harnessing the power of the seas with advanced maritime solutions.',
+            },
+            ],
+            about: {
             title: 'ABOUT US',
             listElements: [
-              {
-                description: 'Outsourcing PTO: managing and forming documentation sets'
-              },
-              {
-                description: 'Providing PTO engineers at the construction site'
-              },
-              {
-                description: 'Consultation and technical support in document package formation'
-              }
+                {
+                boldText: 'Expert Construction Services',
+                description: 'A team of specialists in the field of construction and technical engineering for the implementation of projects of any scale and complexity.',
+                },
+                {
+                boldText: 'Sustainable Development Leaders',
+                description: 'In each project, we strive to bring true value to the client and a high level of service, which determine the approach to our work.',
+                },
+                {
+                boldText: 'Project Success Through Experience',
+                description: 'We help the world develop safely and efficiently, moving towards a sustainable future.',
+                },
+                {
+                boldText: 'Global Engineering Adaptability',
+                description: 'We implement projects on a global scale, following developing technologies and engineering approaches, we adapt to the technical and administrative peculiarities of the country.',
+                },
             ],
-            paragraph: 'Documentation support for the investment and construction project implementation process at all stages of its life cycle using our own digital service IMARPRO®',
-            consultation: 'Leave a request, and we will contact you',
-            contactFormButton: 'Submit Request'
-          },
-          documentsSectionTitle: 'EXECUTIVE DOCUMENTATION PREPARATION',
-          documentsList: [
-            'Preparation of all types of documentation in accordance with state norms and standards',
-            'Preparation of executive documentation (ID)',
-            'Development of Work Production Project (PPR)',
-            'Development of Construction Organization Project (POS)',
-            'Development of technological and technical maps (TK and TTK)',
-            'Development of Dismantling Organization Project (POD)',
-            'Development of Crane Work Production Project (PPRk)',
-            'Development of Work at Height Plan (PPRv)'
-          ],
-          servicesSectionTitle: 'ENGINEERING SYSTEMS DESIGN',
-          services: [
-            {
-              title: 'ELECTRICAL POWER SYSTEMS'
+            paragraphs: [
+                '➤ By creating cost-effective and technologically advanced solutions, we help you reduce the cost of installation, design and operation of your facility, while providing convenience in work processes.',
+                '➤ We make it easier for you to implement your projects by sharing our experience with you. With proper management of personnel, materials and finances, we carry out the processes of implementing your project without any failures.',
+                '➤ We take over the management of all processes during construction in accordance with design drawings, general and special specifications, as well as within the framework of the rules of engineering ethics and occupational safety requirements.',
+            ],
+            consultation: 'Leave a request and we will contact you',
+            contactFormButton: 'contact form',
             },
-            {
-              title: 'LOW-CURRENT SYSTEMS'
+            servicesSectionTitle: 'FULL-SERVICE CONSTRUCTION COMPANY',
+            services: [
+                {
+                    title: 'ENGINEERING',
+                    description: [
+                        'Turnkey construction and installation works',
+                        'Attracting a full staff of employees to the facility',
+                        'Quick mobilization and high-quality coordinated work of the team',
+                    ],
+                },
+                {
+                    title: 'DESIGN',
+                    description: [
+                        'Design of engineering system drawings',
+                        'Delivery of the complete list of documentation to the customer',
+                        'Support during the construction process',
+                    ],
+                },
+                {
+                    title: 'MANAGEMENT',
+                    description: [
+                        'Professional service',
+                        'Efficient maintenance technology',
+                        'Saving of effort and money as a result of proper operation',
+                    ],
+                },
+            ],
+            hero: {
+                description: "IMAR GROUP - We are an international construction company. We implement projects taking into account modern innovative methods of construction engineering.",
+                button: "ABOUT US"
             },
-            {
-              title: 'MECHANICAL ENGINEERING SYSTEMS'
-            }
-          ],
-          hero: {
-            description: "We are an international construction and engineering company, supporting our clients at all stages of their lifecycle in the implementation of infrastructure, industrial, and development projects.",
-            button: "ABOUT US"
-          },
-          projects: {
-            project1: "RESIDENTIAL COMPLEX",
-            project2: "AMUR GPP",
-            project3: "RESIDENTIAL DISTRICT",
-            project4: "AMUR GCC",
-            project5: "KUZMINKI MALL",
-            project6: "G-DRIVE ARENA",
-            project7: "Industrial Park",
-            project8: "«Magadan» Airport",
-            project9: "Min. vody airport",
-            project10: "Roshchino Airport",
-            project11: "ISLAND RC",
-            project12: "PERM STATE ART GALLERY",
-            project13: "EDUCATIONAL COMPLEX “POINT OF THE FUTURE”",
-            project14: "COKE BATTERY №2",
-            project15: "SINTERING PLANT GAS CLEANING",
-            project16: "STEEL COIL STORAGE WAREHOUSE",
-            project17: "REHEATING FURNACE №3",
-            description1: "Electrical and mechanical work",
-            description2: "Construction and installation works",
-            projectCardButton: "See more"
-          },
-          projectsSectionTitle: "OUR PROJECTS",
-          geographyTitle: "GEOGRAPHY OF PROJECTS",
-          career: {
-            title: "We are always looking for ambitious people",
-            description: "If you want to join the IMAR team, please leave a request, and we will contact you.",
-            button: "Learn More"
-          },
-          contacts: {
-            title1: 'Contact Us',
-            title2: 'Career at IMAR',
-            location: ['109147, Moscow, Tagansky Municipal District, 20,', 'bldg. 8, Marksistskaya St., premise 1/1'],
-            phone: '+7 (991) 773-48-28',
-            email: 'info@imarproject.com'
-          },
-          contactForm: {
-            errorMessages: {
-              0: ' ',
-              1: 'Fill in all fields to continue',
-              2: 'Accept the user agreement to continue',
-              3: 'Your message has been successfully sent!',
-              4: 'Something went wrong :('
+            projects: {
+                project1: "RESIDENTIAL COMPLEX",
+                project2: "AMUR GPP",
+                project3: "RESIDENTIAL DISTRICT",
+                project4: "AMUR GCC",
+                project5: "KUZMINKI MALL",
+                project6: "G-DRIVE ARENA",
+                project7: "Industrial Park",
+                project8: "«Magadan» Airport",
+                project9: "Min. vody airport",
+                project10: "Roshchino Airport",
+                project11: "ISLAND RC",
+                project12: "PERM STATE ART GALLERY",
+                project13: "EDUCATIONAL COMPLEX “POINT OF THE FUTURE”",
+                project14: "COKE BATTERY №2",
+                project15: "SINTERING PLANT GAS CLEANING",
+                project16: "STEEL COIL STORAGE WAREHOUSE",
+                project17: "REHEATING FURNACE №3",
+                description1: "Electrical and mechanical work",
+                description2: "Construction and installation works",
+                projectCardButton: "See more"
             },
-            agreement: 'I accept the user agreement and privacy policy',
-            labelName: 'Name',
-            labelEmail: 'Email',
-            labelPhone: 'Phone',
-            button: 'Send'
-          },
-          footer: {
-            phone: 'Phone',
-            email: 'Email',
-            copyright: 'All rights reserved'
-          },
-          projectInfoSection: { title: 'ABOUT THE PROJECT' },
-          projectPage: {
-            header: {
-              title: [
-                'Start / End: ',
-                'Type of Work: ',
-                'Customer: '
-              ]
+            projectsSectionTitle: "OUR PROJECTS",
+            geographyTitle: "GEOGRAPHY OF THE PROJECTS",
+            career: {
+                title: "We are always on the lookout for ambitious people",
+                description: "If you would like to join the IMAR GROUP, please leave an application form and we will contact you.",
+                button: "learn more"
             },
+            contacts: {
+                title1: 'contact us',
+                title2: 'career in imar',
+                location: ['109147, Moscow, Tagansky Municipal District, 20,', 'bldg. 8, Marksistskaya St., premise 1/1'],
+                phone: '+7 (991) 773-48-28',
+                email: 'info@imar-group.com',
+            },
+            contactForm: {
+                errorMessages: {
+                    0: ' ',
+                    1: 'Fill in all the fields to continue',
+                    2: 'Accept the user agreement to continue',
+                    3: 'Your message is successfully sent!',
+                    4: 'Something went wrong :('
+                },
+                agreement: 'I accept the user agreement and privacy policy',
+                labelName: 'Name',
+                labelEmail: 'Email',
+                labelPhone: 'Phone',
+                button: 'Send',
+            },
+            footer: {
+              phone: 'Phone',
+              email: 'Email',
+              copyright: 'All rights reserved'
+            },
+            projectInfoSection: { title: 'ABOUT THIS PROJECT' },
+            projectPage: {
+              header: {
+                title: [
+                  'Start / Finish: ',
+                  'Scope of Works: ',
+                  'Client: '
+                ]
+              },
             projectInfo: [
               {
                 title: ['SYMBOL RC'],
@@ -232,55 +263,195 @@ i18n
                   'The total area of buildings is 155,844 m². The complex includes: 8 buildings with 17-22 floors, 1,193 apartments, two-level underground parking for 896 cars. The quarter will house 26 commercial premises: shops, restaurants, a fitness center and a preschool institution.'
                 ]
               },
+              {
+                title: ['OSTROV RESIDENTIAL COMPLEX', 'BLOCK №5'],
+                headerInfo: ['2022–2024', 'Construction and installation works', 'LMS Group'],
+                description: [
+                  'Multifunctional residential development, Block №5 of the "Ostrov" residential complex, buildings 1–8 in Moscow.',
+                  'The general contractor is responsible for developing working documentation, BIM modeling, performing turnkey construction and finishing works including public areas and site landscaping.',
+                  'Total building area is 155,844 m². The complex includes 8 buildings ranging from 17 to 22 floors, 1,193 apartments, and a two-level underground parking for 896 cars. The block will feature 26 commercial premises: shops, restaurants, a fitness and wellness center, and a preschool institution.'
+                ]
+              },
+              {
+                title: ['PERM STATE', 'ART GALLERY'],
+                headerInfo: ['2022–2024', 'Construction works', 'LMS Group'],
+                description: [
+                  'Building of the Perm State Art Gallery in Perm.',
+                  'The architectural complex combines preserved historical buildings with a new structure stylized in the traditional architecture of the Perm region. Total building area – 21,639 m² on a 1.9 ha site.',
+                  'The project includes exhibition halls, administrative areas, an educational center, restoration workshops, a café, and other functional zones. Special attention is paid to integrating the new building with its historical surroundings.'
+                ]
+              },
+              {
+                title: ['EDUCATIONAL COMPLEX', '“TOCHKA BUDUSHCHEGO”'],
+                headerInfo: ['2023–2025', 'Integrated construction', 'LMS Group'],
+                description: [
+                  'Educational complex in Zhatai, Sakha Republic (Yakutia).',
+                  'The project includes 7 academic buildings, a residential house for teachers and foster families, a heated parking facility with a transport terminal, and sports facilities. The total site area is 263,397 m².',
+                  'The complex is supported by the “New Home” charitable foundation and is designed for an innovative educational process adapted to the Arctic environment.'
+                ]
+              },
+              {
+                title: ['RECONSTRUCTION OF', 'COKE BATTERY №2'],
+                headerInfo: ['2022–2025', 'Industrial construction', 'EVRAZ ZSMK'],
+                description: [
+                  'Reconstruction of the coke battery complex in Novokuznetsk.',
+                  'Construction of a new coke battery with a capacity of 705,000 tons/year, consisting of 77 ovens, a dust-free coke discharge system, and chemical trapping systems.',
+                  'The project includes a full cycle of works from dismantling the old facilities to commissioning new ones, significantly improving environmental safety and production efficiency.'
+                ]
+              },
+              {
+                title: ['SULFUR-GAS', 'PURIFICATION FACILITIES'],
+                headerInfo: ['2024–2026', 'Environmental project', 'EVRAZ ZSMK'],
+                description: [
+                  'Exhaust gas purification system for the sinter plant in Novokuznetsk.',
+                  'The project includes the construction of an exhaust tower, an absorber building, a limestone solution preparation unit, and the installation of all technological equipment.',
+                  'The wet limestone scrubbing method will significantly reduce sulfur dioxide emissions, improving the region’s environmental situation.'
+                ]
+              },
+              {
+                title: ['ROLLED STEEL', 'WAREHOUSE'],
+                headerInfo: ['2024–2025', 'Industrial construction', 'Severstal'],
+                description: [
+                  'Steel warehouse on the territory of the hot rolling mill 2000 in Cherepovets.',
+                  'Construction of a new warehouse complex as part of the capacity expansion program of the rolling mill.',
+                  'The project provides for the creation of modern conditions for the storage and logistics of metal products in accordance with technological requirements.'
+                ]
+              },
+              {
+                title: ['RECONSTRUCTION OF', 'REHEATING FURNACE №3'],
+                headerInfo: ['2024–2025', 'Industrial construction', 'Severstal'],
+                description: [
+                  'Reconstruction of the walking beam furnace in Cherepovets.',
+                  'Complete replacement of two existing furnaces with new ones with a capacity of 400 tons/hour each.',
+                  'The project includes a full cycle from design and dismantling to hot commissioning of the new equipment.'
+                ]
+              }
 
+              ]
+            },
+            servicePage: {
+              serviceInfo: [
+
+                {
+                  title: 'IMAR ENGINEERING AND CONSTRUCTION',
+                  info: [
+                    '• TURNKEY CONSTRUCTION AND INSTALLATION WORKS',
+                    '• ATTRACTING A FULL STAFF OF EMPLOYEES TO THE FACILITY',
+                    '• QUICK MOBILIZATION AND HIGH-QUALITY COORDINATED WORK OF THE TEAM'
+                    ],
+                  descriptionTitle: 'Provides construction and installation services for electromechanical systems:',
+                  description: [
+                    ['➤ Installation of industrial equipment',
+                    '➤ Installation of process pipelines',
+                    '<br/>',
+                    '➤ ES: Electrical Supply',
+                    '➤ EM: Electrical Equipment',
+                    '➤ EG: Lightning Protection and Grounding',
+                    '➤ AMR: Automated Meter Reading',
+                    ],
+                    ['➤ Installation of prefabricated buildings and structures',
+                    '➤ Installation of metal structures',
+                    '<br/>',
+                    "➤ APS Automatic Fire Alarm System",
+                    "➤ Smoke protection automation system",
+                    "➤ SUE System of warning and control of evacuation of people in case of fire",
+                    "➤ ACS Access Control and Management System",
+                    "➤ CCTV Video Surveillance System",
+                    "➤ SCS Structured Cabling System",
+                    "➤ SRF Radio System",
+                    "➤ SPP Automatic Parking System (paid parking system)",
+                    "➤ OS Security alarm system",
+                    "➤ TS Alarm system",
+                    "➤ ECH Electrical Chasification System",
+                    "➤ SES Emergency communication system for immobile groups of population",
+                    ],
+                    [
+                      "➤ OV Heating Ventilation and Air Conditioning",
+                      "➤ OV1 Heating and Heat Supply System",
+                      "➤ OV2 System of general-exchange ventilation",
+                      "➤ OV3 Air-conditioning system",
+                      "➤ ОВ4 Smoke ventilation system",
+                      "➤ VK Sewerage",
+                      "➤ BK1 Internal sewerage systems",
+                      "➤ BK2 Storm water drainage",
+                      "➤ BK3 Industrial sewerage",
+                      "➤ WS Water Supply System",
+                      "➤ CC Refrigeration system",
+                      "➤ AUPT Automatic water fire extinguishing system",
+                      "➤ VPV Internal fire-fighting water supply system",
+                    ]
+                  ],
+                  
+                },
+                {
+                  title: 'IMAR PROJECT',
+                  info: [ '• DESIGN OF ENGINEERING SYSTEM DRAWINGS',
+                      '• DELIVERY OF THE COMPLETE LIST OF DOCUMENTATION TO THE CUSTOMER',
+                      '• SUPPORT DURING THE CONSTRUCTION PROCESSS'],
+                  descriptionTitle: 'Provides electromechanical system design services:',
+                  description: [
+                      ['➤ ES: Electrical Supply',
+                      '➤ EM: Electrical Equipment',
+                      '➤ EG: Lightning Protection and Grounding',
+                      '➤ ASCME: Automated System of Control and Metering of Electricity'
+                      ],
+                      ['➤ APS: Automatic fire alarm system',
+                      '➤ ASPS: Smoke protection automation system',
+                      '➤ SUE: Smoke alarm system: System of automation of smoke protection',
+                      '➤ SUE: System of notification and control of evacuation of people in case of fire',
+                      '➤ ACS: Access Control and Management System',
+                      '➤ CCTV: Video Surveillance System',
+                      '➤ SCS: Structured Cabling System',
+                      '➤ SRF: Radio system',
+                      '➤ SPP: Automatic Parking System (Paid Parking System)',
+                      '➤ OS: Security Alarm System',
+                      '➤ TS: Panic alarm system',
+                      '➤ EC: Electrical Chasification system',
+                      '➤ EES: Emergency communication system for immobile groups of the population'
+                      ],
+                      ['➤ HVAC: Heating, Ventilation, and Air Conditioning',
+                      '➤ HVAC1: Heating and Heat Supply System',
+                      '➤ HVAC2: General Exchange Ventilation System',
+                      '➤ HVAC3: Air Conditioning System',
+                      '➤ HVAC4: Smoke Ventilation System',
+                      '➤ WC: Sewerage',
+                      '➤ WC1: Internal Sewerage Systems',
+                      '➤ WC2: Storm Sewerage',
+                      '➤ WC3: Industrial Sewerage',
+                      '➤ WS: Water Supply System',
+                      '➤ HC: Cold Supply System',
+                      '➤ AUPT: Automatic Water Fire Extinguishing Systems',
+                      '➤ WFW: Internal Fire-Fighting Water Supply System'
+                      ],
+                  ],
+                  
+                },
+                {
+                  title: 'IMAR MANAGEMENT',
+                  info: [
+                    '• DESIGN OF ENGINEERING SYSTEM DRAWINGS',
+                    '• DELIVERY OF THE COMPLETE LIST OF DOCUMENTATION TO THE CUSTOMER',
+                    '• SUPPORT DURING THE CONSTRUCTION PROCESS'],
+                  descriptionTitle: 'Provides commercial real estate maintenance services:',
+                  description: [
+                    ['➤ Maintenance of engineering systems and operation and repair activities',
+                    '➤ Round-the-clock dispatch, emergency and technical services',
+                    '➤ Development and implementation of preventive maintenance activities',
+                    '➤ Ensuring daily uninterrupted and safe operation of the facility',
+                    '➤ Administrative services',
+                    '➤ Ensuring security of the facility',
+                    '➤ Recommendations for additional services to make the facility more attractive to potential clients and investors for potential customers and investors',
+                    '➤ Guarantor of a full range of high-quality services in the sphere of real estate management',
+                    "➤ Due to the unique experience gained in the course of many years of practice, as well as professionalism and qualification of the company's personnel",
+                    '➤ We save effort and money due to competent operation, timely implementation of preventive measures',
+                    '➤ We work according to the scheme of trust cooperation, when all functions are delegated to our employees, but the main strategic decisions and unified control of the object remain in the hands of the owner'
+                    ],
+                  ],
+                  
+                },
             ]
-          },
-          servicePage: [
-            {
-              title: 'ELECTRICAL POWER SYSTEMS',
-              description: [
-                '➤ ES: Electrical Supply',
-                '➤ EM: Electrical Equipment',
-                '➤ EG: Lightning Protection and Grounding',
-                '➤ AMR: Automated Meter Reading',
-              ]
-            },
-            {
-              title: 'LOW-CURRENT SYSTEMS',
-              description: [
-                "➤ APS Automatic Fire Alarm System",
-                "➤ Smoke protection automation system",
-                "➤ SUE System of warning and control of evacuation of people in case of fire",
-                "➤ ACS Access Control and Management System",
-                "➤ CCTV Video Surveillance System",
-                "➤ SCS Structured Cabling System",
-                "➤ SRF Radio System",
-                "➤ SPP Automatic Parking System (paid parking system)",
-                "➤ OS Security alarm system",
-                "➤ TS Alarm system",
-                "➤ ECH Electrical Chasification System",
-                "➤ SES Emergency communication system for immobile groups of population",
-              ]
-            },
-            {
-              title: 'MECHANICAL ENGINEERING SYSTEMS',
-              description: [
-                "➤ OV Heating Ventilation and Air Conditioning",
-                "➤ OV1 Heating and Heat Supply System",
-                "➤ OV2 System of general-exchange ventilation",
-                "➤ OV3 Air-conditioning system",
-                "➤ ОВ4 Smoke ventilation system",
-                "➤ VK Sewerage",
-                "➤ BK1 Internal sewerage systems",
-                "➤ BK2 Storm water drainage",
-                "➤ BK3 Industrial sewerage",
-                "➤ WS Water Supply System",
-                "➤ CC Refrigeration system",
-                "➤ AUPT Automatic water fire extinguishing system",
-                "➤ VPV Internal fire-fighting water supply system",
-              ],
-            },
-          ],
+            }
+
         },
       },
       ru: {
@@ -294,56 +465,84 @@ i18n
             },
             activitiesSectionTitle: 'сферы деятельности',
             activities: [
-                    'Гражданское строительство',
-                    'Промышленное строительство',
-                    'Горнообогатительное строительство',
-                    'Нефтегазовое строительство',
+                {
+                    title: 'Гражданское строительство',
+                    description: 'Формирование ландшафта с помощью видения архитектуры и надежного гражданского проектирования.',
+                },
+                {
+                    title: 'Строительство объектов инфраструктуры',
+                    description: 'Построение необходимых связей через транспорт, коммунальные услуги и проекты городского развития.',
+                },
+                {
+                    title: 'Строительство объектов энергетики и альтернативных источников энергии',
+                    description: 'Повышение благосостояния обществ с помощью устойчивой электроэнергии и инициатив по возобновляемой энергии.',
+                },
+                {
+                    title: 'Промышленное строительство',
+                    description: 'Опытное управление миром добычи, переработки и распределения энергии.',
+                },
+                {
+                    title: 'Строительство морских сооружений',
+                    description: 'Использование сил морей с помощью передовых морских решений.',
+                },
             ],
             about: {
                 title: 'О НАС',
                 listElements: [
                     {
-                        description: 'Аутсорсинг ПТО: ведение и формирование комплекта документации',
+                        boldText: 'Экспертные строительные услуги',
+                        description: 'Команда специалистов в области строительства и технического проектирования для реализации проектов любого масштаба и сложности.',
                     },
                     {
-                        description: 'Предоставление инженеров ПТО на объект строительства',
+                        boldText: 'Лидеры в области устойчивого развития',
+                        description: 'В каждом проекте мы стремимся приносить реальную ценность клиенту и высокий уровень сервиса, который определяет подход к нашей работе.',
                     },
                     {
-                        description: 'Консультационная и техническая поддержка при формировании пакета документов',
+                        boldText: 'Успех проекта через опыт',
+                        description: 'Мы помогаем миру развиваться безопасно и эффективно, двигаясь в сторону устойчивого будущего.',
+                    },
+                    {
+                        boldText: 'Глобальная инженерная адаптивность',
+                        description: 'Мы реализуем проекты в масштабах мирового уровня, следуя развивающимся технологиям и инженерным подходам, адаптируясь к техническим и административным особенностям страны.',
                     },
                 ],
-                paragraph: 'Документационное сопровождение процесса реализации инвестиционно-строительного проекта на всех стадиях его жизненного цикла с помощью собственного цифрового сервиса IMARPRO®',
+                paragraphs: [
+                    '➤ Создавая экономически эффективные и технологически продвинутые решения, мы помогаем вам снизить затраты на установку, проектирование и эксплуатацию вашего объекта, обеспечивая удобство в рабочих процессах.',
+                    '➤ Мы упрощаем для вас реализацию ваших проектов. С правильным управлением персоналом, материалами и финансами мы проводим процессы реализации вашего проекта без каких-либо сбоев.',
+                    '➤ Мы берем на себя управление всеми процессами во время строительства в соответствии с чертежами, общими и специальными спецификациями, а также в рамках правил инженерной этики и требований безопасности труда.',
+                ],
                 consultation: 'Оставьте заявку, и мы свяжемся с вами',
                 contactFormButton: 'оставить заявку',
             },
-            documentsSectionTitle: 'ПОДГОТОВКА ИСПОЛНИТЕЛЬНОЙ ДОКУМЕНТАЦИИ',
-            documentsList: [
-              'Подготовка всех видов документаций в соответствии с гос.нормами и стандартами',
-              'Подготовка ИД исполнительной документации',
-              'Разработка ППР проекта производства работ',
-              'Разработка ПОС проект организации строительства',
-              'Разработка ТК и ТТК технологические и технико-технологические карты ',
-              'Разработка ПОД проект организации демонтажа ',
-              'Разработка ППРк проект производства работ кранами',
-              'Разработка ППРв план производства работ на высоте',
-            ],
-            servicesSectionTitle: 'ПРОЕКТИРОВАНИЕ ИНЖЕНЕРНЫХ СИСТЕМ',
+            servicesSectionTitle: 'СТРОИТЕЛЬНАЯ КОМПАНИЯ ПОЛНОГО ЦИКЛА',
             services: [
               {
-                title: 'ЭЛЕКТРИЧЕСКИЕ СИЛОВЫЕ СИСТЕМЫ',
-
+                title: 'Инжиниринг',
+                description: [
+                  'Комплекс строительно-монтажных работ "под ключ"',
+                  'Привлечение полного штата сотрудников на объект',
+                  'Быстрая мобилизация и высококачественная согласованная работа команды',
+                ],
               },
               {
-                title: 'СЛАБОТОЧНЫЕ СИСТЕМЫ',
-
+                title: 'Проектирование',
+                description: [
+                  'Проектирование чертежей инженерных систем',
+                  'Поставка полного списка документации заказчику',
+                  'Поддержка в процессе строительства',
+                ],
               },
               {
-                title: 'МЕХАНИЧЕСКИЕ ИНЖЕНЕРНЫЕ СИСТЕМЫ',
-
+                title: 'Менеджмент',
+                description: [
+                  'Профессиональное обслуживание',
+                  'Эффективные технологии обслуживания',
+                  'Экономия усилий и денег в результате правильной эксплуатации',
+                ],
               },
             ],
             hero: {
-              description: "Мы - международная строительная и инженерная компания, сопровождаем наших клиентов на всех этапах их жизненного цикла при реализации инфраструктурных, промышленных и развития проектов.",
+              description: "IMAR GROUP - Мы международная строительная компания. Реализуем проекты с учетом современных инновационных методов строительной инженерии.",
               button: "О НАС"
             },
             projects: {
@@ -380,7 +579,7 @@ i18n
               title2: 'Карьера в IMAR',
               location: ['109147, г. Москва, вн.тер.г. Муниципальный Округ' ,'Таганский, ул Марксистская, д. 20, стр. 8, помещ. 1/1'],
               phone: '+7 (991) 773-48-28',
-              email: 'info@imarproject.com',
+              email: 'info@imar-group.com',
             },
             contactForm: {
               errorMessages: {
@@ -562,52 +761,128 @@ i18n
               ]
             },
 
-            servicePage: [
-              {
-                title: 'ЭЛЕКТРИЧЕСКИЕ СИЛОВЫЕ СИСТЕМЫ',
-                description: [
-                  '➤ ЭС: Электроснабжение',
-                  '➤ ЭМ: Электрооборудование',
-                  '➤ ЭГ: Молниезащита и заземление',
-                  '➤ АСКУЭ: Автоматизированная система контроля и учета электроэнергии',
-                ],
-              },
-              {
-                title: 'СЛАБОТОЧНЫЕ СИСТЕМЫ',
-                description: [
-                  "➤ АПС Система автоматической пожарной сигнализации",
-                  "➤ АСПЗ Система автоматизации противо дымной защиты",
-                  "➤ СОУЭ Система оповещения и управления эвакуацией людей при пожаре",
-                  "➤ СКУД Система контроля и управления доступом",
-                  "➤ СВН Система видеонаблюдения",
-                  "➤ СКС Структурированная кабельная система",
-                  "➤ СРФ Система радиофикации",
-                  "➤ СПП Автоматическая парковочная система (система платной парковки)",
-                  "➤ ОС Система охранной сигнализации",
-                  "➤ ТС Система тревожной сигнализации",
-                  "➤ ЭЧ Система электрочасофикации",
-                  "➤ СЭС Система экстренной связи для маломобильных групп населения",
+            servicePage: {
+              serviceInfo: [
+                {
+                  title: 'IMAR ENGINEERING AND CONSTRUCTION',
+                  info: [
+                    '• СТРОИТЕЛЬСТВО ПОД КЛЮЧ И МОНТАЖНЫЕ РАБОТЫ',
+                    '• ПРИВЛЕЧЕНИЕ ПОЛНОГО ШТАТА СОТРУДНИКОВ НА ОБЪЕКТ',
+                    '• БЫСТРАЯ МОБИЛИЗАЦИЯ И ВЫСОКОКАЧЕСТВЕННАЯ СКООРДИНИРОВАННАЯ РАБОТА КОМАНДЫ'
                   ],
-              },
-              {
-                title: 'МЕХАНИЧЕСКИЕ ИНЖЕНЕРНЫЕ СИСТЕМЫ',
-                description: [
-                  "➤ ОВ Отопление вентиляция и кондиционирование",
-                  "➤ ОВ1 Система отопления и теплоснабжения",
-                  "➤ ОВ2 Система обще-обменной вентиляции",
-                  "➤ ОВ3 Система кондиционирования",
-                  "➤ ОВ4 Система противо дымной вентиляции",
-                  "➤ ВК Канализация",
-                  "➤ ВК1 Внутренние системы канализации",
-                  "➤ ВК2 Ливневая канализация",
-                  "➤ ВК3 Производственная канализация",
-                  "➤ ВВ Система водоснабжения",
-                  "➤ ХС Система холодоснабжения",
-                  "➤ АУПТ Автоматические установки водяного пожаротушения",
-                  "➤ ВПВ Внутренний противопожарный водопровод",
-                ]
-              },
-            ]
+                  descriptionTitle: 'Оказывает услуги по строительству и монтажу электромеханических систем:',
+                  description: [
+                    ['➤ Монтаж промышленного оборудования',
+                    '➤ Монтаж технологических трубопроводов',
+                    '<br/>',
+                    '➤ ЭС: Электроснабжение',
+                    '➤ ЭМ: Электрооборудование',
+                    '➤ ЭГ: Молниезащита и заземление',
+                    '➤ АСКУЭ: Автоматизированная система контроля и учета электроэнергии',
+                    ],
+                    ['➤ Монтаж сборных зданий и сооружений',
+                    '➤ Монтаж металлических конструкций',
+                    '<br/>',
+                    "➤ АПС Система автоматической пожарной сигнализации",
+                    "➤ АСПЗ Система автоматизации противо дымной защиты",
+                    "➤ СОУЭ Система оповещения и управления эвакуацией людей при пожаре",
+                    "➤ СКУД Система контроля и управления доступом",
+                    "➤ СВН Система видеонаблюдения",
+                    "➤ СКС Структурированная кабельная система",
+                    "➤ СРФ Система радиофикации",
+                    "➤ СПП Автоматическая парковочная система (система платной парковки)",
+                    "➤ ОС Система охранной сигнализации",
+                    "➤ ТС Система тревожной сигнализации",
+                    "➤ ЭЧ Система электрочасофикации",
+                    "➤ СЭС Система экстренной связи для маломобильных групп населения",
+                    ],
+                    ["➤ ОВ Отопление вентиляция и кондиционирование",
+                    "➤ ОВ1 Система отопления и теплоснабжения",
+                    "➤ ОВ2 Система обще-обменной вентиляции",
+                    "➤ ОВ3 Система кондиционирования",
+                    "➤ ОВ4 Система противо дымной вентиляции",
+                    "➤ ВК Канализация",
+                    "➤ ВК1 Внутренние системы канализации",
+                    "➤ ВК2 Ливневая канализация",
+                    "➤ ВК3 Производственная канализация",
+                    "➤ ВВ Система водоснабжения",
+                    "➤ ХС Система холодоснабжения",
+                    "➤ АУПТ Автоматические установки водяного пожаротушения",
+                    "➤ ВПВ Внутренний противопожарный водопровод",
+                    ]
+                  ],
+                },
+                {
+                  title: 'IMAR PROJECT',
+                  info: [ '• ПРОЕКТИРОВАНИЕ ЧЕРТЕЖЕЙ ИНЖЕНЕРНЫХ СИСТЕМ',
+                      '• ПРЕДОСТАВЛЕНИЕ ПОЛНОГО ПЕРЕЧНЯ ДОКУМЕНТАЦИИ ЗАКАЗЧИКУ',
+                      '• СОПРОВОЖДЕНИЕ В ХОДЕ СТРОИТЕЛЬСТВА'],
+                  descriptionTitle: 'Оказывает услуги по проектированию электромеханических систем:',
+                  description: [
+                      [
+                        '➤ ЭС: Электроснабжение',
+                        '➤ ЭМ: Электрооборудование',
+                        '➤ ЭГ: Молниезащита и заземление',
+                        '➤ АСКУЭ: Автоматизированная система контроля и учета электроэнергии',
+                      ],
+                      [
+                      "➤ АПС Система автоматической пожарной сигнализации",
+                      "➤ АСПЗ Система автоматизации противо дымной защиты",
+                      "➤ СОУЭ Система оповещения и управления эвакуацией людей при пожаре",
+                      "➤ СКУД Система контроля и управления доступом",
+                      "➤ СВН Система видеонаблюдения",
+                      "➤ СКС Структурированная кабельная система",
+                      "➤ СРФ Система радиофикации",
+                      "➤ СПП Автоматическая парковочная система (система платной парковки)",
+                      "➤ ОС Система охранной сигнализации",
+                      "➤ ТС Система тревожной сигнализации",
+                      "➤ ЭЧ Система электрочасофикации",
+                      "➤ СЭС Система экстренной связи для маломобильных групп населения",
+                      ],
+                      ["➤ ОВ Отопление вентиляция и кондиционирование",
+                        "➤ ОВ1 Система отопления и теплоснабжения",
+                        "➤ ОВ2 Система обще-обменной вентиляции",
+                        "➤ ОВ3 Система кондиционирования",
+                        "➤ ОВ4 Система противо дымной вентиляции",
+                        "➤ ВК Канализация",
+                        "➤ ВК1 Внутренние системы канализации",
+                        "➤ ВК2 Ливневая канализация",
+                        "➤ ВК3 Производственная канализация",
+                        "➤ ВВ Система водоснабжения",
+                        "➤ ХС Система холодоснабжения",
+                        "➤ АУПТ Автоматические установки водяного пожаротушения",
+                        "➤ ВПВ Внутренний противопожарный водопровод",
+                        ]
+                  ],
+                  
+                },
+                {
+                  title: 'IMAR MANAGEMENT',
+                  info: [
+                    '• ПРОЕКТИРОВАНИЕ ЧЕРТЕЖЕЙ ИНЖЕНЕРНЫХ СИСТЕМ',
+                    '• ПРЕДОСТАВЛЕНИЕ ПОЛНОГО ПЕРЕЧНЯ ДОКУМЕНТАЦИИ ЗАКАЗЧИКУ',
+                    '• СОПРОВОЖДЕНИЕ В ХОДЕ СТРОИТЕЛЬСТВА'],
+                  descriptionTitle: 'Оказывает услуги по обслуживанию коммерческой недвижимости:',
+                  description: [
+                    ['➤ Обслуживание инженерных систем и проведение ремонтных работ',
+                    '➤ Круглосуточная диспетчерская, аварийная и техническая службы',
+                    '➤ Разработка и внедрение профилактических мероприятий',
+                    '➤ Обеспечение ежедневной бесперебойной и безопасной работы объекта',
+                    '➤ Административные услуги',
+                    '➤ Обеспечение безопасности объекта',
+                    '➤ Рекомендации по дополнительным услугам для повышения привлекательности объекта для потенциальных клиентов и инвесторов',
+                    '➤ Гарант полного спектра качественных услуг в сфере управления недвижимостью',
+                    '➤ Благодаря уникальному опыту, полученному в ходе многолетней практики, а также профессионализму и квалификации персонала компании',
+                    '➤ Мы экономим усилия и средства за счет грамотной эксплуатации, своевременного выполнения профилактических мер',
+                    '➤ Мы работаем по схеме доверительного сотрудничества, когда все функции делегированы нашим сотрудникам, но основные стратегические решения и единый контроль объекта остаются в руках собственника'
+                    ],
+                  ],
+                  
+                },
+              ]
+            }
+            
+            
           },
       }
     },

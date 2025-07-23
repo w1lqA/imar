@@ -22,7 +22,7 @@ import Image17 from '../assets/images/projectImages/p17_1.jpg'
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-const { t } = useTranslation();
+    const { t } = useTranslation();
 
     const projectCards = [
         {
@@ -75,7 +75,6 @@ const { t } = useTranslation();
             title: t("projects.project10"),
             description: t("projects.description1"),
         },
-
         {
             image: Image11,
             title: t("projects.project11"),
@@ -114,8 +113,8 @@ const { t } = useTranslation();
     ];
 
     return (
-        <section id='projects' className="max-w-screen-3xl container bg-gradient-to-b from-main to-main2 mx-auto flex flex-col items-center pt-16 z-0">
-            <h2 className="text-3xl lg:text-4xl font-rubik font-bold text-center mb-8 uppercase text-white">{t("projectsSectionTitle")}</h2>
+        <section id='projects' className="max-w-screen-3xl container bg-gradient-to-tr from-main2 to-main mx-auto flex flex-col items-center pt-16 z-0">
+            <h2 className="text-4xl font-rubik font-bold text-center mb-8 uppercase text-white">{t("projectsSectionTitle")}</h2>
             <div className="w-[50px] h-[6px] bg-[#6484CD] mb-12"></div>
             <div className="max-w-screen-xl mb-12 flex flex-row flex-wrap lg:flex-row items-center lg:items-start justify-center">
                 {projectCards.map((projectCard, index) => (

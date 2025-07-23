@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const ProjectInfo = ({description, images}) => {
     const {t} = useTranslation()
     return (
-        <div className='flex flex-col justify-center max-w-screen-lg mx-auto pt-24 space-y-6 lg:space-y-12 pb-24'>
+        <div className=' flex flex-col justify-center max-w-screen-lg mx-auto pt-16 space-y-6 lg:space-y-12'>
         <div className='grid grid-cols-6 sm:grid-cols-4 sm:grid-rows-2 space-y-6 sm:space-y-0  lg:grid-cols-2 lg:grid-rows-1 lg:gap-x-12'>
             <div className='flex flex-col items-start col-span-4 col-start-2 sm:col-span-2 sm:col-start-2 lg:col-span-1 lg:col-start-1 lg:place-self-start place-self-center'>
                 <h2 className="text-4xl font-rubik font-bold text-left uppercase text-white">

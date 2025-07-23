@@ -78,7 +78,6 @@ import Image17_1 from '../assets/images/projectImages/p17_1.jpg'
 import Image17_2 from '../assets/images/projectImages/p17_2.jpg'
 import Image17_3 from '../assets/images/projectImages/p17_3.jpg'
 
-
 import ProjectInfo from '../components/ProjectInfo';
 import { useTranslation } from 'react-i18next';
 
@@ -86,33 +85,31 @@ const ProjectPage = ({page}) => {
     const pageID = page-1
     const {t} = useTranslation()
     const projectPage = t('projectPage')
-
     const images = [
-    [Image1_1, Image1_2, Image1_3],
-    [Image2_1, Image2_2, Image2_3],
-    [Image3_1, Image3_2, Image3_3],
-    [Image4_1, Image4_2, Image4_3],
-    [Image5_1, Image5_2, Image5_3],
-    [Image6_1, Image6_2, Image6_3],
-    [Image7_1, Image7_2, Image7_3],
-    [Image8_1, Image8_2, Image8_3],
-    [Image9_1, Image9_2, Image9_3],
-    [Image10_1, Image10_2, Image10_3],
-    [Image11_1, Image11_2, Image11_3],
-    [Image12_1, Image12_2, Image12_3],
-    [Image13_1, Image13_2, Image13_3],
-    [Image14_1, Image14_2, Image14_3],
-    [Image15_1, Image15_2, Image15_3],
-    [Image16_1, Image16_2, Image16_3],
-    [Image17_1, Image17_2, Image17_3]
+        [Image1_1, Image1_2, Image1_3],
+        [Image2_1, Image2_2, Image2_3],
+        [Image3_1, Image3_2, Image3_3],
+        [Image4_1, Image4_2, Image4_3],
+        [Image5_1, Image5_2, Image5_3],
+        [Image6_1, Image6_2, Image6_3],
+        [Image7_1, Image7_2, Image7_3],
+        [Image8_1, Image8_2, Image8_3],
+        [Image9_1, Image9_2, Image9_3],
+        [Image10_1, Image10_2, Image10_3],
+        [Image11_1, Image11_2, Image11_3],
+        [Image12_1, Image12_2, Image12_3],
+        [Image13_1, Image13_2, Image13_3],
+        [Image14_1, Image14_2, Image14_3],
+        [Image15_1, Image15_2, Image15_3],
+        [Image16_1, Image16_2, Image16_3],
+        [Image17_1, Image17_2, Image17_3]
     ]
-
   return (
     <div>
-        <header className='relative flex justify-center py-24 bg-center bg-cover'>
-            <img src={images[pageID][1]} className='w-full h-full object-cover absolute -z-10 animate-pulse2 inset-0'/>
+        <header className=' relative flex justify-center py-32 bg-center bg-cover' >
+        <img src={images[pageID][1]} className='w-full h-full object-cover absolute -z-10 animate-pulse2 inset-0'/>
             <div className='backdrop-blur-sm bg-black bg-opacity-50 absolute inset-0' aria-hidden="true"></div>
-            <div class="max-w-xs sm:max-w-screen-sm lg:max-w-screen-lg z-10 flex flex-col lg:flex-row justify-between w-full space-y-6 lg:space-y-0 items-start">
+            <div class="max-w-xs sm:max-w-screen-sm lg:max-w-screen-lg z-10 flex flex-col lg:flex-row justify-between w-full space-y-6 lg:space-y-0 items-start ">
                 <div>
                     <h2 className="text-5xl font-rubik font-bold text-left uppercase text-white flex flex-row">
                     <div className="w-[6px] bg-[#6484CD] mr-6"></div>
@@ -132,14 +129,13 @@ const ProjectPage = ({page}) => {
                 </ul>
             </div>
         </header>
-        <div  className='bg-gradient-to-b from-main2 to-main'>
+        <div className='bg-gradient-to-tr from-main2 to-main z-20'>
             <ProjectInfo description={projectPage.projectInfo[pageID].description}
                 images={images[pageID]}/>
             <Projects/>
             <Contacts title={t("contacts.title1")} emailType={'IMAR CONTACT'}/>
             <Footer/>
         </div>
-
     </div>
   );
 };

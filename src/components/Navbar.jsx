@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoNav from '../assets/LOGO-IMAR-SON/2.png';
+import logoNav from '../assets/LOGO-IMAR-SON/1.png';
 import { Link } from 'react-router-dom';
 import LanguageSelector from "./LanguageSelector";
 import { useTranslation } from "react-i18next";
@@ -18,7 +18,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="bg-gradient-to-t from-main to-main2 text-white py-4">
+        <nav className="bg-gradient-to-tr from-main2 to-main text-white py-4">
             <div className="container max-w-screen-xl mx-auto flex lg:flex-nowrap relative flex-wrap justify-between items-center px-12 xl:px-6 sm:px-24">
                 <Link onClick={scrollToTop} to='/' className='w-32 h-10 flex my-auto'>
                     <img src={logoNav} alt="Logo" />

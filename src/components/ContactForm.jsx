@@ -37,8 +37,7 @@ const ContactForm = ({ emailType }) => {
       return setErrorMessage(2);
     }
   };
-
-
+  
     return (
     <div className="space-y-4">
         <div className='flex flex-row justify-between items-center space-x-6'>
