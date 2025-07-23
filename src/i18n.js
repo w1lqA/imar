@@ -166,6 +166,7 @@ i18n
                   'Client: '
                 ]
               },
+              
             projectInfo: [
               {
                 title: ['SYMBOL RC'],
