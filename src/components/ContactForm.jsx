@@ -18,8 +18,12 @@ const ContactForm = ({ emailType }) => {
     console.log("Sending Email with data:", { userEmail, userName, userPhone, message, emailType });
     if (userEmail && userName && userPhone && message && checkboxState) {
       axios
-        .post("https://imar-group.com/api/sendEmail", {
-          userEmail, userName, userPhone, message, emailType
+        .post("/api/sendEmail", {
+          userEmail,
+          userName,
+          userPhone,
+          message,
+          emailType
         })
         .then(response => {
           console.log("Email sent successfully:", response);
