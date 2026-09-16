@@ -2,24 +2,22 @@ const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-// Configure CORS
 const corsOptions = {
-    origin: 'http://localhost',
+    origin: true,
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
 };
-app.use(cors(corsOptions));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
-// Nodemailer setup
+app.use(cors(corsOptions));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -30,42 +28,68 @@ const contactEmail = nodemailer.createTransport({
 
 contactEmail.verify((error) => {
     if (error) {
-        console.log(error);
+        console.error('Mailer connection error:', error);
     } else {
-        console.log("Ready to send");
+        console.log('Mailer is ready');
     }
 });
 
-// Endpoint to send email
-app.post("/api/sendEmail", (req, res) => {
-    const { userEmail, userName, userPhone, message, emailType } = req.body;
-    console.log("Received data:", req.body); // Log entire body
-    console.log("Parsed data:", { userEmail, userName, userPhone, message, emailType }); // Log parsed data
+app.post('/api/sendEmail', async (req, res) => {
+    const {
+        userEmail,
+        userName,
+        userPhone,
+        message,
+        emailType,
+    } = req.body;
 
+    console.log('Received email request:', {
+        userEmail,
+        userName,
+        userPhone,
+        emailType,
+    });
 
     const mailOptions = {
         from: process.env.EMAIL,
-        to: '338226eu46@gmail.com',
-        subject: `${emailType} - New message`,
-        text: `User email: ${userEmail}, User phone: ${userPhone}, User name: ${userName}, Message: ${message}`,
+        to: process.env.CONTACT_EMAIL,
+        replyTo: userEmail,
+        subject: `${emailType} - Новое сообщение`,
+        text: [
+            'Новое сообщение с сайта',
+            '',
+            `Имя: ${userName}`,
+            `Email: ${userEmail}`,
+            `Телефон: ${userPhone}`,
+            '',
+            'Сообщение:',
+            message,
+        ].join('\n'),
     };
 
-    contactEmail.sendMail(mailOptions, (error) => {
-        if (error) {
-            console.log("Error sending email:", error); // Log any errors
-            res.json(error);
-        } else {
-            console.log("Email sent successfully!");
-            res.json({ code: 200, status: "Message Sent!" });
-        }
-    });
+    try {
+        await contactEmail.sendMail(mailOptions);
+
+        console.log('Email sent successfully');
+
+        res.status(200).json({
+            code: 200,
+            status: 'Message Sent!',
+        });
+    } catch (error) {
+        console.error('Error sending email:', error);
+
+        res.status(500).json({
+            code: 500,
+            status: 'Failed to send message',
+        });
+    }
 });
 
-// Serve static files
-app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "../build", "index.html"));
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
